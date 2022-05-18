@@ -1,0 +1,5 @@
+pyinstaller --noconfirm --onefile --noconsole --icon "./cocklock.ico" --clean "./BaitLocker.pyw" 
+rmdir "build" /q /s
+rmdir "__pycache__" /q /s
+move /y ".\dist\*.exe" ".\"
+rmdir "dist" /q /s
